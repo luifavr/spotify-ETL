@@ -1,2 +1,2 @@
 # spotify-ETL
-Data pipeline using the Spotify API for developers
+Data pipeline extracting data from the Spotify API for developers
