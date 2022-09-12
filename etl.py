@@ -1,4 +1,4 @@
-from cfg import DBCONN, USER, TOKEN
+from cfg import DBCONN, TOKEN
 import sqlalchemy
 import pandas as pd 
 from sqlalchemy.orm import sessionmaker
