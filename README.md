@@ -1,5 +1,5 @@
 # Spotify ETL
-## Data pipeline extracting recently played songs data from the Spotify API for developers
+## Data pipeline extracting recently played songs from the Spotify API for developers
 
 
 ## For setup
