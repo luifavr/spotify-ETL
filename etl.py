@@ -63,7 +63,7 @@ def extract() -> pd.DataFrame:
 
 
 def validate(df: pd.DataFrame) -> bool:
-    """Validate data withind df, check for empty df, null values or pk violation
+    """Validate data within df, check for empty df, null values or pk violation
 
     Args:
         df (pd.DataFrame): song_df
@@ -87,7 +87,7 @@ def validate(df: pd.DataFrame) -> bool:
         raise Exception("Primary Key check is violated")
 
     if df.isnull().values.any():
-        log.warning("Founded null values, finishing execution")
+        log.info("Founded null values, finishing execution")
         raise Exception("Null values found")
 
     return True
