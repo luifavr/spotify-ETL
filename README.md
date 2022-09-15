@@ -4,7 +4,7 @@
 
 ## For setup
 
-### In order to use this API yo have to geneteate an authentication token in the following URL, spotify account needed.
+### In order to use this API you have to generate an authentication token in the following URL, spotify account needed.
 ### https://developer.spotify.com/console/get-recently-played/
 
 ## Initialize Python virtual enviroment
@@ -21,4 +21,9 @@ pip install -r requirements.txt
 DBCONN=VALUE
 TOKEN=VALUE
 ```
+## To run the ETL 
+```
+python3 etl.py
+```
+### After the etl is executed a file named info.log will be created at the current directory, containing all the logs from the execution and warnings in case any exceptions is raised
 
