@@ -16,7 +16,7 @@ log = logging.getLogger()
 
 
 def extract() -> pd.DataFrame:
-    """Extract data from Spotify API for developers
+    """Extract recently played songs from a week ago using Spotify API for developers
 
     Returns:
         pd.DataFrame: DataFrame with all the recently played songs
@@ -69,11 +69,11 @@ def validate(df: pd.DataFrame) -> bool:
         df (pd.DataFrame): song_df
 
     Raises:
-        Exception: _description_
-        Exception: _description_
+        Exception: PK constraint violation
+        Exception: Founded null values
 
     Returns:
-        bool: _description_
+        bool: Returns True if data is valid
     """    
 
     if df.empty:
@@ -94,7 +94,7 @@ def validate(df: pd.DataFrame) -> bool:
 
 
 def load(df: pd.DataFrame):
-    """Load data into the DB from the dataframe created at the extract function
+    """Load data into SQLite from the dataframe created at the extract function, using df.to_sql method
 
     Args:
         df (pd.DataFrame): song dataframe
