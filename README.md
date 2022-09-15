@@ -4,7 +4,7 @@
 
 ## For setup
 
-### In order to use this API yo have to geneteate an authentication token in the following URL, spotify account needed.
+### In order to use this API you have to generate an authentication token in the following URL, spotify account needed.
 ### https://developer.spotify.com/console/get-recently-played/
 
 ## Initialize Python virtual enviroment
