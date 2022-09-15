@@ -21,4 +21,9 @@ pip install -r requirements.txt
 DBCONN=VALUE
 TOKEN=VALUE
 ```
+## To run the ETL 
+```
+python3 etl.py
+```
+### After the etl is executed a file named info.log will be created at the current directory, containing all the logs from the execution and warnings in case any exceptions is raised
 
