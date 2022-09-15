@@ -102,6 +102,7 @@ def load(df: pd.DataFrame):
     engine = sqlalchemy.create_engine(DBCONN)
     conn = sqlite3.connect('spotify_data.sqlite')
     cursor = conn.cursor()
+    
 
     sql_query = """
     CREATE TABLE IF NOT EXISTS recently_played(
@@ -112,6 +113,7 @@ def load(df: pd.DataFrame):
         CONSTRAINT primary_key_constraint PRIMARY KEY (played_at)
     )
     """
+    
 
     cursor.execute(sql_query)
     log.info("Opening database")
