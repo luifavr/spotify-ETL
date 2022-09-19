@@ -21,7 +21,7 @@ pip install -r requirements.txt
 DBCONN=VALUE
 TOKEN=VALUE
 ```
-## To run the ETL 
+## Run the ETL 
 ```
 python3 etl.py
 ```
