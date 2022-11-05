@@ -2,7 +2,7 @@
 ## Data pipeline extracting recently played songs from the Spotify API for developers
 
 
-## For setup
+## Setup
 
 ### In order to use this API you have to generate an authentication token in the following URL, spotify account needed.
 ### https://developer.spotify.com/console/get-recently-played/
